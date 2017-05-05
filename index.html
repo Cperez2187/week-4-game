@@ -3,20 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Star Wars Game</title>
+	<!-- Link to JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	  <!-- Link to CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
 	<header id="header">
-		<h1>Star Wars Game</h1>
+		<h1>Star Wars RPG</h1>
 	</header>
-
-	<div class="container">
 	
-		
+	<!-- Star Wars crawl  -->
+	<div class="crawl">
+
+		<div id="intro"> A long time ago, in a galaxy far,<br> far away....</div>
+	  	<div id="logo"></div>
+	    <div id="scroller">
+	    	<div>
+		    	<p>
+		        It is a period of civil war.
+		        Rebel spaceships, striking
+		        from a hidden base, have won
+		        their first victory against
+		        the evil Galactic Empire.
+		      	</p>
+		      	<p>
+		        During the battle, Rebel
+		        spies managed to steal secret
+		        plans to the Empire's
+		        ultimate weapon, the DEATH
+		        STAR, an armored space
+		        station with enough power to
+		        destroy an entire planet.
+		      	</p>
+		      	<p>
+		        Pursued by the Empire's
+		        sinister agents, Princess
+		        Leia races home aboard her
+		        starship, custodian of the
+		        stolen plan that can save
+		        her people and restore
+		        freedom to the galaxy....
+		      	</p>
+	      	</div>
+	    </div>	
 	</div>
 
+	<div class="container">
+		<section class="characters">
+			<div id="obi-wan">
+				<div class="characer-name">Obi-Wan</div> <br>
+				<img src="assets/images/kenobi_01.jpg"></img> <br>
+				<div>HP: <span id="kenobi-hp">150</span></div>	
+			</div>
+			<div id="darth-vader">
+				<div class="character-name">Darth Vader</div> <br>
+				<img src="assets/images/darth-vader-image.jpg"></img> <br>
+				<div>HP: <span id="vader-hp">200</span></div>
+			</div>
+			<div id="kylo-ren">
+				<div class="character-name">Kylo Ren</div> <br>
+				<img src="assets/images/Kylo_Ren_image.jpg"></img> <br>
+				<div>HP: <span id="kylo-hp">125</span></div>
+			</div>
+			<div id="luke">
+				<div class="character-name">Luke Skywalker</div> <br> 
+				<img id="luke" src="assets/images/luke_skywalker.jpg"></img> <br>
+				<div>HP: <span id="luke-hp"></span>140</div>
+			</div>	
+		</section>
+		<div class="chosen-character">
+			<h2>Your Character</h2>
+		</div>
+		<div class="fight-section">
+			<h2>Fight Section</h2>
+			<button id="attack-button">Attack</button>
+		</div>
+		<div class="defender">
+			<h2>Defender</h2>
+		</div>
+		<div class="enemies-left">
+			<h2>Enemies Left</h2>
+		</div>
+	</div>
+	
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
